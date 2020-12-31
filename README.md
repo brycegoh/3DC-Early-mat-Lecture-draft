@@ -40,3 +40,7 @@ This allow for clean snapshots in which you as the developer can choose how to s
 
 <a name="commits"></a>
 ## Commits
+`git commit` moves the files in the staging area into a snapshot / commit. This can be viewed as a milestone in your project, just like how you frequently save your word documents after every paragraph or what not.
+
+`git commit` commands:
+- `git add -m "some descriptive commit message" `
