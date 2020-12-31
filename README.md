@@ -17,13 +17,41 @@
 <img src="./assets/overview.png" width="400"/>
 Git models the history and timeline of a bunch of files and folders using a series of snapshots. Each snapshot can be viewed as a state of the entire folder in which git is tracking. It contains information about every file and folder.
 
+## Data Model
 
+Git has 3 main data types:
 <img src="./assets/gitTerminology.png" width="400"/>
-In git termoinology, a snapshot is a commit, a file is a blob and a folder is a tree.
+1. Blob
+    Git terminology for Files
+2. Tree
+    Git terminology for Folders
+3. Commits
+    Git terminology for Snapshots
 
+Each Commit has the following data:
+<img src="./assets/dataModelCommit.png" width="400"/>
+1. id
+    A 40 char long String that is used to identify the commit
+2. Author
+    Developer name that created the commit
+3. Parent
+    id of the preceeding / parent commit
+4. Commit Message
+    Meaningful message that the developer wrote to describe the commit
+5.  Snapshot
+    The actual id of the tree / folder which contains files / blobs.
+
+With each commit being able to be identified by their id. This makes identifying them difficult as the 40 long char Strings are meaningless and not useful to humans. Therefore, git uses branch names which will make a human readable String to the commit's id.
+
+Basically a commit / snapshot has it's branch name that can be mapped to locate which commit the name refers to. Example as follows:
+<img src="./assets/dataModelCommitWithBranchName.png" width="400"/>
+
+Git uses allows for more than 1 branch name and snapshot. This is useful when adding multiple features on your project at the same time. For example, from the current snapshot, u can create a new branch and add in the new feature while working on another branch for another independant feature. After the two features are done, you can then merge them into a single snapshot.
+
+Branching example as follows:
 
 <img src="./assets/branching.png" width="400"/>
-Git also allows branching out which is useful when adding multiple features on your project at the same time. For example, from the current snapshot, u can create a new branch and add in the new feature while working on another branch for another independant feature. After the two features are done, you can then merge them into a single snapshot.
+
 
 <a name="staging"></a>
 ## Staging
