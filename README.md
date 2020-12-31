@@ -43,4 +43,27 @@ This allow for clean snapshots in which you as the developer can choose how to s
 `git commit` moves the files in the staging area into a snapshot / commit. This can be viewed as a milestone in your project, just like how you frequently save your word documents after every paragraph or what not.
 
 `git commit` commands:
-- `git add -m "some descriptive commit message" `
+- `git commit -m "some descriptive commit message" ` Move files in staging area to a snapshot and include a descriptive message
+
+<a name="Branching"></a>
+## Branching
+A branch is basically a pointer that allows for meaningful human readable text to describe a snapshot.
+
+### main / master Branch
+Everytime you inialize git, it will automatically create a branch called main or master. You can view this as the main line of development where the live code lives in.
+
+### HEAD Branch
+The HEAD branch is the branch in which points to the current Branch you are currently on.
+
+### Commit in a branch
+Since a branch is just a named pointer, whenever you commit on a different branch, git will create a new snapshot and then move the HEAD and the current branch forward to the new snapshot.
+
+### git checkout
+`git checkout` commands:
+`git checkout` switches branches.
+`git checkout -b <new branch name>` creates a new branch as per name passed in as arguement, then switches to it.
+
+<a name="Merging"></a>
+## Merging
+### Fast Forward
+### Three way merge
