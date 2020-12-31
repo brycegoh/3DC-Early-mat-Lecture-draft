@@ -32,5 +32,11 @@ Before moving to how to create a snapshot / making a commit. We need to understa
 
 This allow for clean snapshots in which you as the developer can choose how to segment your newly created or edited files into seperate snapshots / commits.
 
+`git add` commands:
+- `git add <filename>` add file into staging area
+- `git add --all` add all files in all directories into staging area
+- `git add .` add all files in current directory into staging area
+- `git rm --cached <filename>` remove a file from the staging area
+
 <a name="commits"></a>
 ## Commits
