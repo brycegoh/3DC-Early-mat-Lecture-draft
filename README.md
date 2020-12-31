@@ -60,8 +60,8 @@ Since a branch is just a named pointer, whenever you commit on a different branc
 
 ### git checkout
 `git checkout` commands:
-`git checkout` switches branches.
-`git checkout -b <new branch name>` creates a new branch as per name passed in as arguement, then switches to it.
+- `git checkout` switches branches.
+- `git checkout -b <new branch name>` creates a new branch as per name passed in as arguement, then switches to it.
 
 <a name="Merging"></a>
 ## Merging
