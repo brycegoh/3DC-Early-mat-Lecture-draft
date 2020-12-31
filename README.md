@@ -21,6 +21,7 @@ Git models the history and timeline of a bunch of files and folders using a seri
 ## Data Model
 
 Git has 3 main data types:
+
 <img src="./assets/gitTerminology.png" width="400"/>
 1. Blob
     Git terminology for Files
@@ -30,6 +31,7 @@ Git has 3 main data types:
     Git terminology for Snapshots
 
 Each Commit has the following data:
+
 <img src="./assets/dataModelCommit.png" width="400"/>
 1. id
     A 40 char long String that is used to identify the commit
@@ -46,11 +48,13 @@ With each commit being able to be identified by their id. This makes identifying
 
 Basically a commit / snapshot has it's branch name that can be mapped to locate which commit the name refers to. 
 Example as follows:
+
 <img src="./assets/dataModelCommitWithBranchName.png" width="400"/>
 
 Git uses allows for more than 1 branch name and snapshot. This is useful when adding multiple features on your project at the same time. For example, from the current snapshot, u can create a new branch and add in the new feature while working on another branch for another independant feature. After the two features are done, you can then merge them into a single snapshot.
 
 Branching example as follows:
+
 <img src="./assets/branching.png" width="400"/>
 
 
@@ -97,4 +101,4 @@ Since a branch is just a named pointer, whenever you commit on a different branc
 ### Fast Forward
 ### Three way merge
 <a name="Examples using commands"></a>
-### Examples using commands we have learnt
+## Examples using commands we have learnt
