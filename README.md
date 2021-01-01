@@ -44,14 +44,14 @@ Each Commit has the following data:
 5.  Snapshot
     The actual id of the tree / folder which contains files / blobs.
 
-With each commit being able to be identified by their id. This makes identifying them difficult as the 40 long char Strings are meaningless and not useful to humans. Therefore, git uses branch names which will make a human readable String to the commit's id.
+With each commit being able to be identified by their id. This makes identifying them difficult as the 40 long char Strings are meaningless and not useful to humans. Therefore, git uses branch names which will map a human readable String to the commit's id.
 
-Basically a commit / snapshot has it's branch name that can be mapped to locate which commit the name refers to. 
+Basically a commit / snapshot can have a branch name that can be mapped to locate which commit the name refers to. 
 Example as follows:
 
 <img src="./assets/dataModelCommitWithBranchName.png" width="400"/>
 
-Git uses allows for more than 1 branch name and snapshot. This is useful when adding multiple features on your project at the same time. For example, from the current snapshot, u can create a new branch and add in the new feature while working on another branch for another independant feature. After the two features are done, you can then merge them into a single snapshot.
+Git allows for more than 1 branch name and snapshot. This is useful when adding multiple features on your project at the same time. For example, from the current snapshot, u can create a new branch and add in the new feature while working on another branch for another independant feature. After the two features are done, you can then merge them into a single snapshot.
 
 Branching example as follows:
 
@@ -98,7 +98,29 @@ Since a branch is just a named pointer, whenever you commit on a different branc
 
 <a name="Merging"></a>
 ## Merging
-### Fast Forward
-### Three way merge
+We use `git merge` to merge branches together. 
+
+There are 2 types of merge as follows:
+- Fast Forward
+    - When the branch is linear (No branching out). A fast forward merge will occur. Do remember that a branch is simply a pointer to a commit, so if it is linear, there is no need to create another commit, the branch only needs to update the pointer.
+
+    Example as follows:
+    <img src="./assets/merge-6.png" width="400"/>
+
+- Three way merge
+    - When the commits are not linear, git will create another commit and merge the branches together.
+
+    Example as follows:
+    <img src="./assets/merge-5.png" width="400"/>
+
 <a name="Examples using commands"></a>
 ## Examples using commands we have learnt
+To better illustrate how you could visualise basic git commands. We will be going through the 2 ways of merging but starting from scratch.
+<img src="./assets/merge-1.png" width="400"/>
+    1. On our first commit, 1 snapshot in which the default branches `main / master` and `HEAD` points to. Take note `main / master` is a default branch created and `HEAD` is a pointer to show which branch you are currently on.
+<img src="./assets/merge-2.png" width="400"/>
+    2. After making some changes, we need to use `git add` to add the modified files into the staging area. This is to tell git that the added files are to be tracked.
+<img src="./assets/merge-3.png" width="400"/>
+<img src="./assets/merge-4.png" width="400"/>
+<img src="./assets/merge-5.png" width="400"/>
+<img src="./assets/merge-6.png" width="400"/>
