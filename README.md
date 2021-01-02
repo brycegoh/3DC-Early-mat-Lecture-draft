@@ -143,4 +143,11 @@ To better illustrate how you could visualise basic git commands. We will be goin
 
 <img src="./assets/merge-6.png" width="400"/>
 
-7. To illustrate a fastforward commit, refer to the left of the image for an example of a linear path of commits. You will realise that newBranch2 is simply some form of modification of the main branch. Therefore, git does not need to create another snapshot like what it did previously, but it only needs to update the main pointer to point to the commit in which newBranch2 points to.
+7. To illustrate a fast forward commit, refer to the left of the image for an example of a linear path of commits. You will realise that newBranch2 is simply some form of modification of the main branch. Therefore, git does not need to create another snapshot like what it did previously, but it only needs to update the main pointer to point to the commit in which newBranch2 points to.
+
+<a name="github"></a>
+## Remote / github
+
+Git works locally on our computer, but what if we want to collaborate with other developers and would like to share the git folder. For this, we use github which hosts git folders.
+
+To connect git to a remote git repository, we use `git remote add <name of remote> <url link of remote git repo>`
