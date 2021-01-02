@@ -150,4 +150,8 @@ To better illustrate how you could visualise basic git commands. We will be goin
 
 Git works locally on our computer, but what if we want to collaborate with other developers and would like to share the git folder. For this, we use github which hosts git folders.
 
-To connect git to a remote git repository, we use `git remote add <name of remote> <url link of remote git repo>`
+To link a git folder to a remote git repository, we use `git remote add <name of remote> <url link of remote git repo>`. This can be seen as syncing your git folder with a remote computer that contains the same git repo.
+
+In order to send updates to the remote repo, we use `git push <remote name> <local branch name that you want to update>`
+
+In order to get updates from the remote repo, we use `git pull <remote name> <local branch name that you want to update>`
