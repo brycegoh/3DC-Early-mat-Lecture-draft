@@ -7,8 +7,9 @@
 4. [Commits](#commits)
 5. [Branching](#branching)
 6. [Merging](#merge)
-6. [Examples using commands)](#Examples-using-commands))
-8. [Github / remote](#github)
+7. [Merge Conflicts](#merge-conflict)
+8. [Examples using commands)](#Examples-using-commands))
+9. [Github / remote](#github)
     1. [Pull / Push](#github/pull-push)
     2. [Fetch / Clone](#github/fetch-clone)
 
@@ -114,6 +115,18 @@ There are 2 types of merge as follows:
     Example as follows:
 
     <img src="./assets/merge-5.png" width="400"/>
+
+<a name="merge-conflict"></a>
+## Merge Conflicts
+
+When merging 2 or more branches, git will do auto merging, however when it comes across something it is unsure of, it will trigger a merge conflict. An example of such a conflict is as shown:
+
+<img src="./assets/mergeConflictDiag.png" width="400"/>
+
+You will see weird seperators on the merge conflict. The following image explains what they are and what they mean:
+
+<img src="./assets/mergeConflictExpl.png" width="400"/>
+
 
 <a name="Examples using commands"></a>
 ## Examples using commands we have learnt
