@@ -11,7 +11,7 @@
 8. [Examples using commands)](#Examples-using-commands))
 9. [Github / remote](#github)
     1. [Pull / Push](#github/pull-push)
-    2. [Fetch / Clone](#github/fetch-clone)
+    2. [Clone](#github/fetch-clone)
 
 <a name="overview"></a>
 ## Overview of git
@@ -165,6 +165,19 @@ Git works locally on our computer, but what if we want to collaborate with other
 
 To link a git folder to a remote git repository, we use `git remote add <name of remote> <url link of remote git repo>`. This can be seen as syncing your git folder with a remote computer that contains the same git repo.
 
+<a name="github/pull-push"></a>
+### pull / push
+
 In order to send updates to the remote repo, we use `git push <remote repo name> <local branch name that you want to update>`
 
 In order to get updates from the remote repo, we use `git pull <remote repo name> <local branch name that you want to update>`
+
+<a name="github/clone"></a>
+### clone
+
+To download repositories on github as a git repo, we use `git clone <repo url>`.
+A url can be accessed as follows:
+
+<img src="./assets/clone.png" width="400"/>
+
+Running `git clone <repo url>` will download the entire repo as a git repo instead of just a zip folder.
