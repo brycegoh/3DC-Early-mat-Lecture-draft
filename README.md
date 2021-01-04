@@ -11,7 +11,7 @@
 8. [Examples using commands)](#Examples-using-commands))
 9. [Github / remote](#github)
     1. [Pull / Push](#github/pull-push)
-    2. [Clone](#github/fetch-clone)
+    2. [Clone](#github/clone)
 
 <a name="overview"></a>
 ## Overview of git
