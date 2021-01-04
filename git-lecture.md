@@ -13,6 +13,15 @@
     1. [Pull / Push](#github/pull-push)
     2. [Clone](#github/clone)
 
+<a name="purpose"></a>
+## Why do we need git?
+
+Git helps us organize our codebase into snapshots so that one can revert back or combine different snapshots easily. We all have done this too, just in a less efficient manner such as :
+
+<img src="./assets/purpose.png" width="400"/>
+
+This can get confusing and is rather prone to human errors. Therefore this is where git comes in to help us organize different stages of development and big fixes.
+
 <a name="overview"></a>
 ## Overview of git
 
