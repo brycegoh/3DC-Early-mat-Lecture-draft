@@ -1,4 +1,3 @@
-testtttt
 # 3DC-git-Lecture
 
 # Table of contents
