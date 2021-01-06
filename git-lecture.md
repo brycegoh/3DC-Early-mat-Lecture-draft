@@ -207,6 +207,9 @@ You will frequently use `git log --all --graph --decorate` to print out a diagra
 
 <a name="git-diff"></a>
 ### git diff
+    `git diff <filename>` shows the changes you made in relation to the current snapshot of the file.
+
+    `git diff <branch name> <filename>` shows the differences as compared to a sepcific file in the specified branch.
 
 
 <a name="github"></a>
