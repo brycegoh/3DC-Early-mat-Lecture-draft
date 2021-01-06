@@ -199,17 +199,20 @@ Some useful git commands as listed:
 
 <a name="git-status"></a>
 ### git status
+
 `git status` shows you the current state of your working directory in respect to your current branch.
 
 <a name="git-log"></a>
 ### git log
+
 You will frequently use `git log --all --graph --decorate` to print out a diagram of the timeline of your commits. This is useful in visualizing your commits and where your branches are pointing at.
 
 <a name="git-diff"></a>
 ### git diff
-    `git diff <filename>` shows the changes you made in relation to the current snapshot of the file.
 
-    `git diff <branch name> <filename>` shows the differences as compared to a sepcific file in the specified branch.
+`git diff <filename>` shows the changes you made in relation to the current snapshot of the file.
+
+`git diff <branch name> <filename>` shows the differences as compared to a sepcific file in the specified branch.
 
 
 <a name="github"></a>
