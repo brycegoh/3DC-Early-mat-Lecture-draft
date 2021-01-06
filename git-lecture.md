@@ -8,7 +8,7 @@
 5. [Branching](#branching)
 6. [Merging](#merge)
     1. [git merge](#merge/merge)
-    2. [rebase](#marge/rebase)
+    2. [rebase](#merge/rebase)
 7. [Merge Conflicts](#merge-conflict)
 8. [Examples using commands)](#Examples-using-commands))
 9. [Github / remote](#github)
