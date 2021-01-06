@@ -203,9 +203,18 @@ To link a git folder to a remote git repository, we use `git remote add <name of
 <a name="github/pull-push"></a>
 ### pull / push
 
-In order to send updates to the remote repo, we use `git push <remote repo name> <local branch name that you want to update>`
+In order to send updates to the remote repo, we use 
+`git push <remote repo name> <branch name>`
 
-In order to get updates from the remote repo, we use `git pull <remote repo name> <local branch name that you want to update>`
+In order to get updates from the remote repo, we use 
+`git pull <remote repo name> <branch name>`
+
+Another way of getting updates from the remote repo, we also can use 
+`git fetch <remote repo name> <branch name>`
+
+The differences between `git pull` and `git fetch`, is that `git pull` automatically merges the changes into your local directory while `git fetch` gets all the changes and stores in in another commit in a branch named `git merge FETCH_HEAD ` in which you can later combine using `git merge FETCH_HEAD`. 
+
+Therefore `git pull` actually calls `git fetch` and `git merge FETCH_HEAD` automatically.
 
 <a name="github/clone"></a>
 ### clone
