@@ -16,7 +16,7 @@
     2. [git log](#git-log)
     3. [git diff](#git-diff)
 10. [Github / remote](#github)
-    1. [Pull / Push](#github/pull-push)
+    1. [Push / Pull / Fetch](#github/pull-push)
     2. [Clone](#github/clone)
 
 <a name="purpose"></a>
@@ -223,7 +223,7 @@ Git works locally on our computer, but what if we want to collaborate with other
 To link a git folder to a remote git repository, we use `git remote add <name of remote> <url link of remote git repo>`. This can be seen as syncing your git folder with a remote computer that contains the same git repo.
 
 <a name="github/pull-push"></a>
-### pull / push
+### push / pull / fetch
 
 In order to send updates to the remote repo, we use 
 `git push <remote repo name> <branch name>`
