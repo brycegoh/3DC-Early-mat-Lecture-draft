@@ -1,3 +1,4 @@
+test
 # 3DC-git-Lecture
 
 # Table of contents
@@ -11,7 +12,10 @@
     2. [rebase](#merge/rebase)
 7. [Merge Conflicts](#merge-conflict)
 8. [Examples using commands)](#Examples-using-commands))
-9. [Github / remote](#github)
+9. [git utilities](#utilities)
+    1. [git log](#git-log)
+    2. [git diff](#git-diff)
+10. [Github / remote](#github)
     1. [Pull / Push](#github/pull-push)
     2. [Clone](#github/clone)
 
@@ -152,7 +156,7 @@ There are 2 types of merge as follows:
 
 When merging 2 or more branches, git will do auto merging, however when it comes across something it is unsure of, it will trigger a merge conflict. An example of such a conflict is as shown:
 
-<img src="./assets/git/mergeConflictDiag.png" width="400"/>
+<img src="./assets/git/mergeConflictDiag.png" width="700"/>
 
 You will see weird seperators on the merge conflict. The following image explains what they are and what they mean:
 
