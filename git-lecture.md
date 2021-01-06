@@ -10,10 +10,11 @@
     1. [git merge](#merge/merge)
     2. [rebase](#merge/rebase)
 7. [Merge Conflicts](#merge-conflict)
-8. [Examples using commands)](#Examples-using-commands))
+8. [Examples using commands](#Examples-using-commands))
 9. [git utilities](#utilities)
-    1. [git log](#git-log)
-    2. [git diff](#git-diff)
+    1. [git status](#git-status)
+    2. [git log](#git-log)
+    3. [git diff](#git-diff)
 10. [Github / remote](#github)
     1. [Pull / Push](#github/pull-push)
     2. [Clone](#github/clone)
@@ -191,6 +192,22 @@ To better illustrate how you could visualise basic git commands. We will be goin
 <img src="./assets/git/merge-6.png" width="400"/>
 
 7. To illustrate a fast forward commit, refer to the left of the image for an example of a linear path of commits. You will realise that newBranch2 is simply some form of modification of the main branch. Therefore, git does not need to create another snapshot like what it did previously, but it only needs to update the main pointer to point to the commit in which newBranch2 points to.
+
+<a name="utilities"></a>
+## git utilities
+Some useful git commands as listed:
+
+<a name="git-status"></a>
+### git status
+`git status` shows you the current state of your working directory in respect to your current branch.
+
+<a name="git-log"></a>
+### git log
+You will frequently use `git log --all --graph --decorate` to print out a diagram of the timeline of your commits. This is useful in visualizing your commits and where your branches are pointing at.
+
+<a name="git-diff"></a>
+### git diff
+
 
 <a name="github"></a>
 ## Remote / github
