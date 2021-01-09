@@ -19,6 +19,10 @@
     1. [Push / Pull / Fetch](#github/pull-push)
     2. [Clone](#github/clone)
 
+##Youtube playlist to accompany notes
+
+https://www.youtube.com/playlist?list=PL_D88w5Aragp5062QqlgDrUkDl2-kgv79
+
 <a name="purpose"></a>
 ## Why do we need git?
 
