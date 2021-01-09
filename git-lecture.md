@@ -19,7 +19,7 @@
     1. [Push / Pull / Fetch](#github/pull-push)
     2. [Clone](#github/clone)
 
-##Youtube playlist to accompany notes
+## Youtube playlist to accompany notes
 
 https://www.youtube.com/playlist?list=PL_D88w5Aragp5062QqlgDrUkDl2-kgv79
 
@@ -153,15 +153,15 @@ There are 2 types of merge as follows:
 <a name="merge/rebase"></a>
 ### git rebase
 
-    `git rebase <branch to rebase to>` stores all the differences between the branches, then resetting the branch you are currently on to a commit preceeding the branch you are rebase-ing to. It then merges all the differences into that commit. You may then perform a `git merge` to fast-forward the branch.
+`git rebase <branch to rebase to>` stores all the differences between the branches, then resetting the branch you are currently on to a commit preceeding the branch you are rebase-ing to. It then merges all the differences into that commit. You may then perform a `git merge` to fast-forward the branch.
 
-    Example as follows:
+Example as follows:
 
-    <img src="./assets/git/git-rebase-1.png" width="400"/>
-    You can view `git rebase` as git recording all the differences between `newBranch` and `main` then creating a new commit, then reapplying the differences into the new commit.
+<img src="./assets/git/git-rebase-1.png" width="400"/>
+You can view `git rebase` as git recording all the differences between `newBranch` and `main` then creating a new commit, then reapplying the differences into the new commit.
 
-    <img src="./assets/git/git-rebase-2.png" width="400"/>
-    A `git merge main` will then do a fast-forward merge. Take note that as previously mentioned, a branch is simply a pointer so a fast forward merge just redefines that the `main` branch is pointing at.
+<img src="./assets/git/git-rebase-2.png" width="400"/>
+A `git merge main` will then do a fast-forward merge. Take note that as previously mentioned, a branch is simply a pointer so a fast forward merge just redefines that the `main` branch is pointing at.
 
 <a name="merge-conflict"></a>
 ## Merge Conflicts
