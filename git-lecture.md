@@ -158,9 +158,11 @@ There are 2 types of merge as follows:
 Example as follows:
 
 <img src="./assets/git/git-rebase-1.png" width="400"/>
+
 You can view `git rebase` as git recording all the differences between `newBranch` and `main` then creating a new commit, then reapplying the differences into the new commit.
 
 <img src="./assets/git/git-rebase-2.png" width="400"/>
+
 A `git merge main` will then do a fast-forward merge. Take note that as previously mentioned, a branch is simply a pointer so a fast forward merge just redefines that the `main` branch is pointing at.
 
 <a name="merge-conflict"></a>
