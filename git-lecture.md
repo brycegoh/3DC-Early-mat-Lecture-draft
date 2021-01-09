@@ -39,24 +39,32 @@ Git models the history and timeline of a bunch of files and folders using a seri
 Git has 3 main data types:
 
 <img src="./assets/git/gitTerminology.png" width="400"/>
+
 1. Blob
     Git terminology for Files
+
 2. Tree
     Git terminology for Folders
+
 3. Commits
     Git terminology for Snapshots
 
 Each Commit has the following data:
 
 <img src="./assets/git/dataModelCommit.png" width="400"/>
+
 1. id
     A 40 char long String that is used to identify the commit
+
 2. Author
     Developer name that created the commit
+
 3. Parent
     id of the preceeding / parent commit
+
 4. Commit Message
     Meaningful message that the developer wrote to describe the commit
+    
 5.  Snapshot
     The actual id of the tree / folder which contains files / blobs.
 
