@@ -141,7 +141,7 @@ There are 2 types of merge as follows:
 
     Example as follows:
 
-    <img src="../git/merge-6.png" width="400"/>
+    <img src="./assets/git/merge-6.png" width="400"/>
 
 - Three way merge
     - When the commits are not linear, git will create another commit and merge the branches together.
